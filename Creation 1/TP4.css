@@ -1,0 +1,33 @@
+body{
+	background-color: #AF7AC5;
+	text-align: center;
+}
+h1{
+	color: #2E4053;
+	font-family: Arial;
+	font-size: 3em;
+}
+div{
+	border: 2px solid white;
+	border-radius: 35px;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 35%;
+	padding:3px;
+
+}
+button{
+	width: 300px;
+	border: 2px solid white;
+	border-radius: 26px;
+	background-color: #5B2C6F ;
+	padding: 15px 32px;
+	margin-top: 3px;
+}
+button:hover
+{
+	color: #5B2C6F ;
+	background-color: black;
+	border: 2px solid white;
+  
+}

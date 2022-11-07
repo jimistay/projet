@@ -1,0 +1,27 @@
+body{
+    background-color: #9370DB   ;
+}
+
+h1, h2{
+    color: red;
+}
+
+div{
+    background-color: #87CEFA;
+    border: 15px solid #191970 ;
+    border-radius: 15px;
+    padding-left: 5%;
+    padding-right: 1.5%;
+    width: 80%;
+    text-align: center;
+    margin: 2%;
+}
+
+.element{
+ background-color: #87CEFA;
+}
+
+.elementTwo{
+    background-color: #87CEFA;
+    
+}
