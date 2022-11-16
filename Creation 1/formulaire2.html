@@ -5,53 +5,69 @@
 
 </head>
 <body background="15.jpg">
-<center> <h1> Formulaire d'inscription </h1> </center>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bouton1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Veillez remplir ce formulaire pour crée un compte</h1>
+    <div class="container">
+      <label for="social">Raison social :</label>
+      <input type="text" id="social" />
 
-<form>
- <fieldset>
-<center><legend> <h2> Informations personelles </h2></legend> 
-Nom: <input type="text" name="t1" placeholder="saisir votre nom" size="10"> <br>
-Prenom: <input type="text" name="t2" size="10"> <br>
-Datte de naissance: <input type="text" name="t3"size="10"> <br>
-Mot de passe: <input type="password" name="t4"size="10"> <br>
-</fieldset> </center>
+      <label for="etoile">Etoile :</label>
+      <input
+        type="number"
+        id="etoile"
+        min="0"
+        max="5"
+        value="0"
+      />
 
-<br>
-<form>
-<center>	<fieldset>
-Civilite: <br>
-			
-		  Monsieur <input type="radio" name="r1">
-		  Madame <input type="radio" name="r1">
-		</fieldset> </center>
-<br>
-<form>
-<center>	<fieldset>
-hobbies: <br>
-	sport <input type="checkbox" name="c1">	
-	lecture <input type="checkbox" name="c2">
-	musique <input type="checkbox" name="c3">
-</fieldset> </center>
-	<br>
-<form>
-<center>	<fieldset>
-VILLE : <select>
-<option> Nice </option>
-<option> Paris </option>
-<option> Marseille </option>
-<option> Nantes </option>
-<br></select>
-<br>
-<br>
-Adresse: <br>
-<textarea name="tx1" rows="5" cols="33"> 
-</textarea></select> </fieldset> </center>
-<input type="button" name="b1" value="Enregistrer">
-<input type="button" name="b2" value="Annuler"> 
+      <label for="adresse">Adresse :</label>
+      <input type="text" id="adresse" />
 
+      <label for="mail">Email :</label>
+      <input type="text" id="mail" />
 
+      <label for="price">Prix : </label>
+      <input type="text" id="price" />
+      <div>
+        <label for="petsTrue" id="labelFirst">Animaux acceptes : </label>
+        <input type="radio" name="pets" id="petsTrue" />
+      </div>
+      <div>
+        <label for="petsfalse">Animaux non acceptes : </label>
+        <input type="radio" name="pets" id="petsfalse" />
+      </div>
 
-</select>
+      <label for="country">Ville :</label>
+      <input type="text" id="country" />
 
-</body>
+      <label for="type">Type :</label>
+      <select id="type">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+
+      <label for="user">Identifiant :</label>
+      <input type="text" id="user" />
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" />
+    </div>
+    <footer>
+      <button>Annuler</button>
+      <button>S'inscrire</button>
+    </footer>
+  </body>
 </html>
