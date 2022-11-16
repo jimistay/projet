@@ -82,23 +82,23 @@ nav li:hover .submenu{
 }
 
 .menu-html:hover{
-	border-top: 5px solid green;
-	background-color: RGBa(228, 77, 38, 0.15);
+	border-top: 5px solid red;
+	background-color: rgba(228, 77, 38, 15);
 }
 
 .menu-css:hover{
-	border-top: 5px solid yellow;
-	background-color: RGBa(000, 112, 192, 0.15);
+	border-top: 5px solid blue;
+	background-color: RGBa(000, 112, 192, 15);
 }
 
 .menu-js:hover{
-	border-top: 5px solid red;
-	background-color: RGBa(241, 211, 79, 0.15);
+	border-top: 5px solid yellow;
+	background-color: RGBa(241, 211, 79, 15);
 }
 
 .menu-contact:hover{
 	border-top: 5px solid blue;
-	background-color: RGBa(220, 220, 220, 0.15);
+	background-color: RGBa(220, 220, 220, 0.20);
 }
 
 nav > ul > li:hover a{
@@ -130,3 +130,13 @@ nav > ul > li:hover a{
 	background-color: rgb(200, 165, 75);
 }
 
+div{
+	font-family:'Rubik Mono One'sans-serif;
+	background-color: #333;
+	font-color:white;
+	font-size: 20px;
+	text-align: center;  
+	text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+	--webkit-text-stroke:2px #7e2bd9;
+	--webkit-text-fill-color;
+}
