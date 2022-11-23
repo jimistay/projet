@@ -1,0 +1,19 @@
+body
+{
+    background-color: blueviolet;
+}
+button
+{
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    border: 2px solid red;
+    border-radius: 26px;
+    color:white;
+    font-size: 3em;
+}
+button:hover
+{
+    background-color: whitesmoke;
+    color: black;
+}
