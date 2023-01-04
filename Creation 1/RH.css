@@ -10,6 +10,10 @@ li {
     color: whitesmoke;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid red;
+    border-radius: 26px;
+    color:white;
+    font-size: 2em;
 }
 
 img {
