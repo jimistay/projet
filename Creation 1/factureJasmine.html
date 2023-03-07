@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="factureJasmine.css">
+    <script type="text/javascript" src="factureJasmine.js"></script>
+
+<!-- pour voir le code de javascript veillez me conctacter merci-->
+
+    <title>Facture Jasmine Avakova</title>
+</head>
+<body>
+<header>
+    <div id="header-image">
+        <img id="logo-entreprise" src="Wikimedia-logo.png" alt="logo entreprise">
+    </div>
+    <div id="header-info-enterprise">
+        <input id="name-info-entreprise" type="text" placeholder="Nom de l'entreprise">
+        <input id="adresse-info-entreprise" type="text" placeholder="Adresse postale">
+        <textarea id="contact-info-entreprise" placeholder="Détaile du contacte"></textarea>
+        <input id="date-info-entreprise" type="date" placeholder="date">
+        <h1 id="title-info-entreprise">FACTURE</h1>
+        <input id="numero-info-entreprise"
+               type="number"
+               placeholder="numéro de facture"
+               min="0">
+    </div>
+</header>
+<main>
+    <div id="facture-info-container">
+        <div id="condition-facture-container">
+            <p id="condition-facture">Conditionde de paiement, par exemple: dû dans X jours</p>
+        </div>
+        <div class="facture-info">
+            <p class="title-facture-info">Destinataire</p>
+            <input type="text" placeholder="Nom" id="emeteur-name" class="emeteur-name">
+            <input type="text" placeholder="Nom de société" id="emeteur-societer" class="emeteur-societer">
+            <input type="text" placeholder="Adresse postale" id="emeteur-adresse" class="emeteur-adresse">
+            <input type="tel" placeholder="Téléphone" id="emeteur-tel" class="emeteur-tel">
+            <input type="email" placeholder="Email" id="emeteur-email" class="emeteur-email">
+        </div>
+        <div class="facture-info">
+            <p class="title-facture-info">Envoyez à</p>
+            <input type="text" placeholder="Nom" id="destinataire-name" class="destinataire-name">
+            <input type="text" placeholder="Nom de société" id="destinataire-societer" class="destinataire-societer">
+            <input type="text" placeholder="Adresse postale" id="destinataire-adrese" class="destinataire-adrese">
+            <input type="tel" placeholder="Téléphone" id="destinataire-tel" class="destinataire-tel">
+            <input type="email" placeholder="Email" id="destinataire-email" class="destinataire-email">
+        </div>
+    </div>
+    <div id="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th id="table-description">DESCRIPTION</th>
+                <th id="table-qtn">QUANTITÉ</th>
+                <th id="table-prix">PRIX UNITAIRE</th>
+                <th id="table-total">TOTAL</th>
+            </tr>
+            </thead>
+            <tbody id="item-produit">
+            <tr id="produit-1">
+                <td>
+                    <input type="text" id="description-produit-1" class="description-produit">
+                </td>
+                <td>
+                    <input type="number" id="quant-produit-1" class="quant-produit" value="0">
+                </td>
+                <td>
+                    <input type="number" id="prix-produit-1" class="prix-produit" value="0">
+                </td>
+                <td id="total-produit-1" class="total-produit">0 €</td>
+            </tr>
+
+            <tr id="produit-2">
+                <td>
+                    <input type="text" id="description-produit-2" class="description-produit">
+                </td>
+                <td>
+                    <input type="number" id="quant-produit-2" class="quant-produit" value="0">
+                </td>
+                <td>
+                    <input type="number" id="prix-produit-2" class="prix-produit" value="0">
+                </td>
+                <td id="total-produit-2" class="total-produit">0 €</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="remarque-container">
+        <p id="remarque-title">Rermarques, notes, et instructions de paiement</p>
+        <p id="sous-total-text">SOUS-TOTAL</p>
+        <p id="#sous-total-input">0</p>
+        <p id="remise-text">REMISE</p>
+        <input type="number" placeholder="0" id="remise-input">
+        <p id="sous-remise-text">SOUS-TOTAL MOINS LES REMISES</p>
+        <p id="sous-remise-input">0</p>
+        <p id="impot-text">TAUX D'IMPOSITION</p>
+        <input type="number" placeholder="0" name="" id="impot-input">
+        <p id="taxe-text">TAXE TOTALE</p>
+        <p id="taxe-input">0</p>
+        <p id="expedito-text">EXPEDITO, MANUTENTION</p>
+        <input type="number" placeholder="0"  name="" id="expedito-input">
+        <p id="solde-text">SOLDE DU</p>
+        <p id="solde-input">0</p>
+    </div>
+</main>
+<footer>
+    <div id="button-container">
+        <button onclick="calculer()">Calculer</button>
+        <button onclick="ajouterLigne()" >Ajouter une ligne</button>
+        <button onclick="autoRemp()">Remplir automatiquement</button>
+        <button onclick="annuler()">Annuler</button>
+    </div>
+</footer>
+</body>
+</html>

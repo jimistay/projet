@@ -1,0 +1,510 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+html{
+    background-color: #b2d2ff;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 170px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 167px calc(100% - 167px);
+    background-color: #68a6fc;
+}
+
+
+header #header-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+
+
+}
+
+
+header #header-image img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+header #header-info-enterprise {
+    display: grid;
+    width: calc(100% - 5px);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+}
+
+
+header #header-info-enterprise input {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+}
+
+header #header-info-enterprise input, #contact-info-entreprise {
+    padding: 3px;
+}
+
+header #header-info-enterprise input::placeholder, #contact-info-entreprise::placeholder {
+    color: black;
+    font-style: oblique;
+    font-weight: lighter;
+
+}
+
+header #header-info-enterprise input:focus, #contact-info-entreprise:focus {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+#name-info-entreprise {
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#adresse-info-entreprise {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+#contact-info-entreprise {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    resize: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+
+#title-info-entreprise {
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+#date-info-entreprise {
+    grid-column-start: 5;
+    grid-row-start: 4;
+    text-align: center;
+}
+
+#numero-info-entreprise {
+    grid-column-start: 5;
+    grid-row-start: 5;
+    text-align: center;
+
+}
+
+
+
+#facture-info-container {
+    padding-left: 20px;
+
+}
+
+#facture-info-container #condition-facture-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 50px;
+    margin-left: 30px;
+}
+
+#facture-info-container #condition-facture-container #condition-facture {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    height: 15px;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+.facture-info {
+    display: inline-flex;
+    flex-direction: column;
+    padding-right: 5px;
+    width: 49%;
+    font-size: 19px;
+    gap: 10px;
+}
+
+
+.facture-info .title-facture-info {
+    font-weight: bold;
+    border-bottom: solid black 2px;
+}
+
+
+.facture-info input {
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    padding-left: 5px;
+
+}
+
+
+.facture-info input:focus {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+
+
+main table {
+    border: black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+main #table-container{
+    margin-top: 50px;
+
+
+}
+
+#table-description {
+    width: 70%;
+}
+
+#table-prix{
+    width: 10%;
+}
+
+#table-qtn{
+    width: 10%;
+}
+
+#table-total{
+    width: 20%;
+}
+
+table thead {
+    background-color: #68a6fc;
+    color: white;
+}
+
+
+
+main table tbody tr:nth-child(even) {
+    background: #e8e8e8
+}
+
+main table tbody tr:nth-child(odd) {
+    background: #FFF
+}
+
+
+tbody tr td input {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    width: 100%;
+
+}
+
+
+tbody tr td input:focus {
+    outline: none;
+}
+
+table td {
+    border: solid 2px #808080;
+}
+
+.description-produit{
+    text-align: left;
+    padding-left: 3px;
+}
+
+.total-produit{
+    text-align: right;
+    font-size: 12px;
+}
+
+#remarque-container{
+    padding: 3px;
+    margin: 0 auto;
+    width: 80%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 60% 30% 10% ;
+    grid-template-rows: repeat(7 , 1fr);
+
+}
+
+
+
+#remarque-container p{
+    text-align: right;
+}
+#remarque-container #remarque-title{
+    text-align: left;
+}
+
+#remarque-container #remise-text{
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+}
+
+#remarque-container #remise-input{
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+#remarque-container #sous-remise-text{
+    grid-row-start: 3;
+    grid-column-start: 2;
+
+}
+
+#remarque-container #sous-remise-input{
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+#remarque-container #impot-text{
+    grid-row-start: 4;
+    grid-column-start: 2;
+
+}
+
+#remarque-container #impot-input{
+    grid-row-start: 4;
+    grid-column-start: 3;
+}
+
+#remarque-container #impot-input::after{
+    content: "%";
+}
+
+
+
+#remarque-container #taxe-text{
+    grid-row-start: 5;
+    grid-column-start: 2;
+
+}
+
+#remarque-container #taxe-input{
+    grid-row-start: 5;
+    grid-column-start: 3;
+}
+
+#remarque-container #expedito-text{
+    grid-row-start: 6;
+    grid-column-start: 2;
+    border-bottom: 1px solid black;
+
+}
+
+#remarque-container #expedito-input{
+    grid-row-start: 6;
+    grid-column-start: 3;
+    border-bottom: 1px solid black;
+
+}
+
+#remarque-container #solde-text{
+    grid-row-start: 7;
+    grid-column-start: 2;
+    margin-top: 5px;
+    font-weight: bolder;
+    margin-right: 2px;
+}
+
+#remarque-container #solde-input{
+    grid-row-start: 7;
+    grid-column-start: 3;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #f3b9c2;
+    border-bottom: 1px solid black;
+}
+
+
+#remarque-container input{
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    font-size: 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#remarque-container input:focus{
+    outline: none;
+}
+
+
+footer{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    height: 5%;
+}
+
+footer #button-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer #button-container button{
+    height: 35PX;
+    width: 130px;
+    border: none;
+    border-radius: 15px;
+    background-color: #2b3046;
+    color: whitesmoke;
+    box-shadow: 11px 10px 17px 0px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+footer #button-container button:hover{
+    background: grey;
+    color: white;
+}
+
+
+/* Responsive tablette */
+@media (max-width: 1300px) {
+    header #header-info-enterprise {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, 20%);
+    }
+
+    header #header-info-enterprise input, #contact-info-entreprise {
+        width: 100%;
+    }
+
+    #title-info-entreprise {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        text-align: center;
+    }
+
+    #date-info-entreprise {
+        grid-column-start: 2;
+        grid-row-start: 4;
+        text-align: center;
+    }
+
+    #numero-info-entreprise {
+        grid-column-start: 2;
+        grid-row-start: 5;
+        text-align: center;
+
+    }
+
+    #facture-info-container{
+        display: grid;
+        grid-template-rows: 45% 10% 45% ;
+
+    }
+
+    #facture-info-container  #condition-facture-container{
+        grid-row-start: 2;
+        display: block;
+    }
+
+
+    #facture-info-container #condition-facture-container{
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .facture-info{
+        width: 80%;
+    }
+
+
+}
+
+/* Responsive téléphone */
+
+@media (max-width: 720px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 240px;
+    }
+
+    header #header-image {
+        max-height: 100%;
+        max-width: 100%;
+
+    }
+
+    header #header-image #logo-entreprise {
+        object-fit: contain;
+        height: 50px;
+        width: 50px;
+    }
+
+
+    header #header-info-enterprise {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #title-info-entreprise {
+        font-size: 20px;
+        order: -5;
+    }
+
+    header #header-info-enterprise input, #contact-info-entreprise {
+        text-align: center;
+        width: 50%;
+    }
+
+    #contact-info-entreprise {
+        height: 50px;
+    }
+
+
+    #facture-info-container{
+        gap: 20px;
+    }
+
+    #facture-info-container #condition-facture-container{
+        padding: 0;
+        margin: 0;
+    }
+}
